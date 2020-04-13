@@ -1,3 +1,4 @@
+import 'package:cachoemi/src/pages/home/widgets/select_players_dialog.dart';
 import 'package:cachoemi/src/widgets/RoundedButton.dart';
 import 'package:flutter/material.dart';
     
@@ -34,8 +35,6 @@ class HomeScreen extends StatelessWidget {
   }
 
   void _showPlayersDialog(BuildContext context) {
-
-
     showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -43,10 +42,7 @@ class HomeScreen extends StatelessWidget {
             height: 200,
             width: 100,
             child: Dialog(
-              child: Container(
-                height: ,
-                child: Text("ASDJLASK"),
-              ),
+              child: SelectPlayersDialog()
             ),
           );
         }

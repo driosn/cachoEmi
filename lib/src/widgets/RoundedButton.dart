@@ -22,7 +22,7 @@ class RoundedButton extends StatelessWidget {
             BoxShadow(color: Colors.grey, blurRadius: 5.0, offset: Offset(5.0, 5.0), spreadRadius: 3.0)
           ]
         ),
-        child: Text(this.buttonText, style: TextStyle(color: Colors.white),)
+        child: Text(this.buttonText, style: Theme.of(context).textTheme.body1.merge(TextStyle(color: Colors.white)),)
       ),
       onTap: this.onPressed,
     );

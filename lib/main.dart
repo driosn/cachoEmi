@@ -12,7 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Cacho EMI',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.blue,
+        textTheme: TextTheme(
+          body1: TextStyle(fontFamily: 'Cabin', fontSize: 16.0),
+          body2: TextStyle(fontFamily: 'Cabin', fontSize: 20.0),
+          title: TextStyle(fontFamily: 'Cabin', fontSize: 24.0),
+        )
       ),
       home: HomeScreen(),
       initialRoute: '/',
